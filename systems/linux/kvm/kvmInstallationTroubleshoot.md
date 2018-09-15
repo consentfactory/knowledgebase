@@ -17,4 +17,5 @@ host, accept the key, then exit out, then try to connect to KVM.
 available to authenticate action ‘org.libvirt.unix.manage'”.
 
 Solution: add the ssh user to the libvirt group.
+
 Source: http://blog.wikichoon.com/2016/01/polkit-password-less-access-for-libvirt.html
