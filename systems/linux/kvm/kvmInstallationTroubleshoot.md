@@ -1,6 +1,6 @@
-#KVM Installation and Troubleshooting
+# KVM Installation and Troubleshooting
 
-##Can’t Access KVM from virt-manager on remote Ubuntu install
+## Can’t Access KVM from virt-manager on remote Ubuntu install
 
 **First Issue**: need ssh-askpass package.
 
