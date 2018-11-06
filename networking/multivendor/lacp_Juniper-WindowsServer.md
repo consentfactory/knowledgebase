@@ -5,6 +5,7 @@ Configuring basic LACP between Cisco IOS-XE and Juniper JunOS is a little tricky
 ### Windows Server
 
 I'm lazy and don't want to write this out, so check out these instructions:
+
 https://blogs.technet.microsoft.com/uspartner_ts2team/2012/09/25/nic-teaming-in-windows-server-2012/
 
 Basically, set up a NIC team in LACP mode, set your load balancing mode and click ok. Basically. Super basic. For load balance modes, check this out:
