@@ -58,4 +58,26 @@ You need to configure the minimum number of links for LACP to run on if one of t
 set interfaces ae0 aggregated-ether-options minimum-links 1
 ```
 
+Final config looks like this:
+```
+ae0 {
+    description "<We always document things, right? RIGHT?>";
+    native-vlan-id 99;
+    aggregated-ether-options {
+        minimum-links 1;
+        lacp {
+            active;
+        }
+    }
+    unit 0 {
+        family ethernet-switching {
+            interface-mode trunk;
+            vlan {
+                members all;
+            }
+        }
+    }
+}
+```
+
 That's it. 
