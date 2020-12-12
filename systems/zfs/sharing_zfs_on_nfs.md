@@ -7,3 +7,6 @@ Example:
 ```
 sudo zfs set sharenfs="rw=@192.168.0.0/24,rw=@10.0.0.0/24" pool-name/dataset-name`
 ```
+
+Source:
+https://blog.programster.org/sharing-zfs-datasets-via-nfs
