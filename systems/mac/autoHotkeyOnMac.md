@@ -17,7 +17,7 @@ Note: if you update the application or change something, you'll need to redo ste
 
 ## Example code for Shortcut
 
-`
+```
 on run {}
   # Get date from terminal shell and save to variable 'theDate'
 	set theDate to do shell script "date +%Y%m%d"
@@ -34,7 +34,7 @@ on run {}
 	# Send the text as keystrokes
   tell application "System Events" to keystroke textToType
 end run
-`
+```
 
 ## Sources
 
