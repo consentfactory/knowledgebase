@@ -15,7 +15,7 @@ The gist: AutoHotkey isn't available on Mac as it is for Windows, but you can mo
 
 Note: if you update the application or change something, you'll need to redo step 6.
 
-## Example code for Shortcut
+## Example code that types out the current date and some text
 
 ```
 on run {}
@@ -32,7 +32,26 @@ on run {}
   # Set the text that you're trying to send
 	set textToType to "Configured " & theDate & " - Jimmy"
 	# Send the text as keystrokes
-  tell application "System Events" to keystroke textToType
+        tell application "System Events" to keystroke textToType
+end run
+```
+
+## Example code that types out contents of clipboard
+
+```
+on run {}
+  # Get the current application that you're working from
+	tell application "System Events"
+		tell (first process whose frontmost is true)
+			set appName to displayed name
+		end tell
+	end tell
+  # Call the application you're working from currently
+	tell application appName to activate
+  # Set the text that you're trying to send
+	set textToType to the clipboard
+  # Send the text as keystrokes
+	tell application "System Events" to keystroke textToType
 end run
 ```
 
