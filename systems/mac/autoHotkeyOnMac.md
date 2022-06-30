@@ -4,14 +4,15 @@ The gist: AutoHotkey isn't available on Mac as it is for Windows, but you can mo
 
 ## Basic Process
 
-1. Open Automator > Create and Application
+1. Open Automator > File > New > Application
 2. Enter your code
 3. Save as application
-4. In Automator > Create quick action 
-5. Select the previously created applicaiton
-6. Add application from step 1-3 to System Preferences > Security & Privacy > Accessibility
-7. Go to System Preferences > Keyboard > Shortcuts > Services
-8. Create the keyboard shortcut
+4. Open Automator again > File > New > Quick Action 
+5. Go to Library > Utilities > Launch Application
+6. Select the previously created application
+7. Add application from step 1-3 to System Preferences > Security & Privacy > Accessibility
+8. Go to System Preferences > Keyboard > Shortcuts > Services
+9. Create the keyboard shortcut
 
 Note: if you update the application or change something, you'll need to redo step 6.
 
